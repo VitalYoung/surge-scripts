@@ -36,8 +36,8 @@ if (isGetCookie) {
         },
         body: JSON.stringify({'activityCode' : 'checkin'})
     };
-    $httpClient.get(request, (error, response, body) => {
-        if (error) {
+    $httpClient.post(request, (error, response, body) => {
+        if (response.status != 200) {
             $notification.post("招商银行信用卡", "", error);
         } {
         const result = JSON.parse(body);
