@@ -39,7 +39,7 @@ if (isGetCookie) {
     $httpClient.get(request, (error, response, body) => {
         if (error) {
             $notification.post("招商银行信用卡", "", error);
-        }
+        } {
         const result = JSON.parse(body);
         if (result.respCode == 1000) {
             $notification.post("招商银行信用卡", "", "签到成功，获得 " + result.data.awardValue + " 积分🎁");
@@ -50,6 +50,7 @@ if (isGetCookie) {
         } else {
             $notification.post("招商银行信用卡", "", "签到失败，请查看日志");
             console.log(response.body);
+        }
         }
     });
 }
