@@ -8,7 +8,7 @@
         {
             "id": "readkeys",
             "name": "招商银行信用卡",
-            "keys": ["checkinURL", "cookieKey", "userAgentKey"],
+            "keys": ["iNotificatioin_cmbchina_cookieKey", "iNotificatioin_cmbchina_userAgentKey"],
             "settings": [],
             "author": "@zhuyang",
             "repo": "",
