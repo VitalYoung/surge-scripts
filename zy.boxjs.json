@@ -1,0 +1,18 @@
+{
+    "id": "vital.app.sub",
+    "name": "vital订阅",
+    "author": "@VitalYoung",
+    "icon": "https://avatars0.githubusercontent.com/u/7855057?s=400&u=6780ec62fa1e2681566d99f6c0f0a9d8446190ff&v=4",
+    "repo": "https://github.com/VitalYoung/surge-scripts",
+    "apps": [
+        {
+            "id": "readkeys",
+            "name": "查看Surge",
+            "keys": [""],
+            "settings": [],
+            "author": "@zhuyang",
+            "repo": "",
+            "icons": ["https://avatars0.githubusercontent.com/u/7855057?s=400&u=6780ec62fa1e2681566d99f6c0f0a9d8446190ff&v=4"]
+        }
+    ]
+}
