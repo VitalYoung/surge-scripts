@@ -4,7 +4,7 @@
 [MITM]
 hostname = liveinfo.ysp.cctv.cn
 /*
-
+let upload_url = 'https://dev.shengyan.tk/upload.json'
 if ($.response !== "undefined") {
   let body = JSON.parse($.response.body)
   let playurl = body['playurl']
@@ -12,7 +12,7 @@ if ($.response !== "undefined") {
   let vkey = body['vkey']
   
   var request = {
-    url: checkinURL,
+    url: upload_url,
     method: 'POST',
     headers: {},
     body: JSON.stringify({'Vkey':vkey, 'Livepid':livepid, 'Playurl':playurl})
