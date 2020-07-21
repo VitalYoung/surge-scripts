@@ -5,8 +5,8 @@
 hostname = liveinfo.ysp.cctv.cn
 */
 let upload_url = 'https://dev.shengyan.tk/upload.json'
-if ($.response !== "undefined") {
-  let body = JSON.parse($.response.body)
+if ($response !== "undefined") {
+  let body = JSON.parse($response.body)
   let playurl = body['playurl']
   let livepid = body['livepid']
   let vkey = body['vkey']
@@ -17,11 +17,11 @@ if ($.response !== "undefined") {
     headers: {},
     body: JSON.stringify({'Vkey':vkey, 'Livepid':livepid, 'Playurl':playurl})
   };
-  $.httpClient.post(request, (err, res, body) => {
+  $httpClient.post(request, (err, res, body) => {
     if (res.status == 200) {
-      $.notification.post('央视频', '', '成功获取 ' + livepid)
+      $notification.post('央视频', '', '成功获取 ' + livepid)
     } else {
-      $.notification.post('央视频', '', '获取失败')
+      $notification.post('央视频', '', '获取失败')
     }
   })
 }
