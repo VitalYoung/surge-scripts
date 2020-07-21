@@ -15,7 +15,7 @@ if ($response !== "undefined") {
     url: upload_url,
     method: 'POST',
     headers: {},
-    body: JSON.stringify({'Vkey':vkey, 'Livepid':livepid, 'Playurl':playurl})
+    body: JSON.stringify({'Vkey':vkey, 'Livepid':livepid+"", 'Playurl':playurl})
   };
   $httpClient.post(request, (err, res, body) => {
     if (res.status == 200) {
