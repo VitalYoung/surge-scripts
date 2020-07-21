@@ -3,7 +3,7 @@
 央视频 = type=http-response,pattern=https://liveinfo\.ysp\.cctv\.cn/\?cmd=2&cnlid=,script-path=https://raw.githubusercontent.com/VitalYoung/surge-scripts/master/ysp.js,script-update-interval=0
 [MITM]
 hostname = liveinfo.ysp.cctv.cn
-/*
+*/
 let upload_url = 'https://dev.shengyan.tk/upload.json'
 if ($.response !== "undefined") {
   let body = JSON.parse($.response.body)
