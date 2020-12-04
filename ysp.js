@@ -46,7 +46,7 @@ let map_idx = {
   '600002493': '河北卫视',
   '600002513': '山东卫视'
 }
-let upload_url = 'https://dev.shengyan.tk/upload.json'
+let upload_url = 'http://web.shengyan.tk/upload.json'
 if ($response !== "undefined") {
   let body = JSON.parse($response.body)
   let playurl = body['playurl']
